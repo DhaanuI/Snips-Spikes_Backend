@@ -1,7 +1,7 @@
 const express = require('express');
 
 // --------------->>>>>>>> Male Service Router <<<<<<<<-------------------
-const { MaleGetData, MalePostData,getMaleSingleData, MalePatchData, MaleDeleteData } = require('../controllers/MaleServiceController');
+const { MaleGetData, MalePostData,getMaleSingleData, MalePatchData, MaleDeleteData } = require('../controllers/maleServiceController');
 
 const MaleRouter = express.Router();
 

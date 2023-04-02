@@ -1,5 +1,5 @@
 // --------------->>>>>>>> Male Service Model Location <<<<<<<<-------------------
-const { MaleModel } = require("../model/MaleServiceModel.js");
+const { MaleModel } = require("../model/maleServiceModel.js");
 
 
 
