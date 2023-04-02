@@ -8,7 +8,7 @@ const { userRouter } = require("./routes/user.route");
 const { authenticate } = require("./middlewares/authenticate.middleware");
 const { LogsData } = require("./middlewares/log.middleware");
 const { LogoutRouter } = require("./routes/logout.route");
-const { dbconnetion } = require("./Configs/db");
+const { connectDB  } = require("./Configs/db");
 const { GntRouter } = require("./routes/generateNewToken.route");
 const http = require("http");
 // const { githublogin } = require("./routes/github.oauth.route");
@@ -65,7 +65,7 @@ app.use("/logout",authenticate,LogoutRouter);
 
 app.listen(process.env.port, async () => {
   try {
-    dbconnetion;
+    await connectDB ;
     console.log(`Connected to Database`);
     console.log(`Server listening on ${process.env.port}`);
   } catch (error) {
