@@ -1,5 +1,5 @@
 // --------------->>>>>>>> Female Service Model Location <<<<<<<<-------------------
-const { FemaleModel } = require("../model/FemaleServiceModel.js");
+const { FemaleModel } = require("../model/FemaleServiceModel");
 
 
 // --------->>>> GET <<<<<---------
